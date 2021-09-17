@@ -4,7 +4,7 @@
 
 body{
     min-height: 100vh;
-    background-color: rgba(152, 221, 202, 1);
+    background-image: url('../assets/background-pattern.png');
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
     padding: 50px 0;
