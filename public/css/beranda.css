@@ -1,11 +1,12 @@
 *{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: 0px;
     padding: 0;
 }
 
 body{
     font-family: 'Montserrat', sans-serif;
+    background-color: #F9F9F9;
 }
 
 a{
@@ -23,6 +24,8 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding: 0 70px 0 77px;
+    border-bottom: solid 1px #4D78C7;
+    background-color: white;
 }
 
 #logo{
@@ -34,6 +37,10 @@ h1{
     align-items: center;
 }
 
+.hidden{
+    display: none;
+}
+
 .group, ul{
     display: flex;
 }
@@ -42,6 +49,7 @@ ul{
     list-style: none;
     align-items: center;
     position: relative;
+    background-color: white;
 }
 
 nav ul li.navbar{
@@ -77,13 +85,15 @@ nav ul li.navbar:hover::after{
     cursor: pointer;
 }
 
+
 #floating-dropdown{
-    display: flex;
+    display: none;
     flex-direction: column;
     position: absolute;
     right: 10px;
     top: 70px;
     border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 #floating-dropdown li{
@@ -97,4 +107,101 @@ nav ul li.navbar:hover::after{
 
 #floating-dropdown p{
     margin-left: 10px;
+}
+
+#floating-dropdown a{
+    color: black;
+}
+
+#mobile-toggle{
+    border: none;
+    width: 136px;
+    height: 39px;
+    border-radius: 10px;
+    display: none;
+    background-color: #4D8E63;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    font-size: 13px;
+    font-weight: 600;
+    color: white; 
+    cursor: pointer;
+}
+
+#mobile-dropdown{
+    top: 92px;
+    left: 0;
+    right: 0;
+    background-color: #4D8E63;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    font-weight: 600;
+}
+
+#mobile-dropdown a{
+    width: 100%;
+}
+
+#mobile-dropdown li{
+    color: white;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    padding: 0 37px;
+}
+
+#mobile-dropdown li.deep{
+    padding: 0 67px;
+}
+
+@media only screen and (max-width: 1000px) {
+    nav{
+        height: 72px;
+        border: none;
+        padding: 0 30px;
+    }
+
+    #floating-dropdown , #toggle, #nav-buttons{
+        display: none;
+    }
+
+    #logo{
+        align-items: center;
+    }
+
+    #logo .group{
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+    }
+
+    h1{
+        font-size: 13px;
+    }
+
+    h2{
+        font-size: 8px;
+        color: #5C5C5C;
+    }
+
+    #logo img{
+        width: 60px;
+        height: 55px;
+    }
+
+    .hidden{
+        display: block;
+    }
+
+    #mobile-toggle{
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 1001px) {
+    #mobile-dropdown{
+        display: none !important;
+    }
 }

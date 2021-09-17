@@ -14,7 +14,10 @@
     <nav>
         <div id="logo">
             <img src="assets/logo.png" alt="" width="100px" height="98px">
-            <h1>SI-DILAN</h1>
+            <div class="group">
+                <h1>SI-DILAN</h1>
+                <h2 class="hidden">RSUD Siti Fatimah</h2>
+            </div>
         </div>
         <div class="group">
             <ul id="nav-buttons">
@@ -31,27 +34,58 @@
                     <a href="">Notifikasi</a>
                 </li>
                 <ul id="floating-dropdown">
-                    <li>
-                        <img src="./assets/icon1.png" alt="">
-                        <p>Data</p>
-                    </li>
-                    <li>
-                        <img src="./assets/icon2.png" alt="">
-                        <p>Riwayat</p>
-                    </li>
+                    <a href="">
+                        <li>
+                            <img src="./assets/icon1.png" alt="">
+                            <p>Data Diri</p>
+                        </li>
+                    </a>
+                    <a href="" style="border-top: 1px solid rgba(0, 0, 0, 0.5); border-bottom: 1px solid rgba(0, 0, 0, 0.5);">
+                        <li>
+                            <img src="./assets/icon2.png" alt="">
+                            <p>Riwayat</p>
+                        </li>
+                    </a>
                     <a href="">
                         <li>
                             <img src="./assets/icon3.png" alt="">
-                            <p>Keluar</p>
+                            <p style="color: #FF0000;">Keluar</p>
                         </li>
                     </a>
                 </ul>
             </ul>
             <img src="./assets/toggle2.png" alt="" id="toggle" width="92px" height="71px">
         </div>
+        <button id="mobile-toggle">
+            <p>Pilihan Menu</p>
+            <img src="./assets/mobile-toggle.png" alt="">
+        </button>
+        <ul id="mobile-dropdown">
+            <a href="">
+                <li>Beranda</li>
+            </a>
+            <a href="">
+                <li>Izin Belajar</li>
+            </a>
+            <a href="">
+                <li>Tugas Belajar</li>
+            </a>
+            <a href="">
+                <li class="deep">Data Diri</li>
+            </a>
+            <a href="">
+                <li class="deep">Riwayat</li>
+            </a>
+            <a href="">
+                <li style="background-color: #265D58;" class="deep">Keluar</li>
+            </a>
+        </ul>
     </nav>
 
     <main></main>
-    <footer></footer>
+    <footer>
+        
+    </footer>
+    <script src="./js/nav.js"></script>
 </body>
 </html>
