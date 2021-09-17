@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/nav-footer.css">
+    <link rel="stylesheet" href="./css/lengkapi-data.css">
+    <title>Lengkapi Data</title>
+</head>
+<body class="col">
+    <h1>Lengkapi Data</h1>
+    <form action="" class="col">
+        <div class="col question">
+            <label for="">Nama</label>
+            <input type="text">
+        </div>
+        <div class="col question">
+            <label for="">NIP</label>
+            <input type="text">
+        </div>
+        <div class="col question">
+            <label for="">Alamat</label>
+            <input type="text">
+        </div>
+        <div class="col question">
+            <label for="">Tempat Lahir</label>
+            <input type="text">
+        </div>
+        <div class="col question">
+            <label for="">Email</label>
+            <input type="email">
+        </div>
+        <div class="col question">
+            <label for="">No Telepon</label>
+            <input type="number">
+        </div>
+        <div class="col question">
+            <label for="">Posisi</label>
+            <select name="" id="">
+                <option value="">Test</option>
+            </select>
+        </div>
+        <div class="col question">
+            <label for="">Pangkat</label>
+            <select name="" id=""></select>
+        </div>
+        <div class="col question">
+            <label for="">Golongan</label>
+            <select name="" id=""></select>
+        </div>
+        <div class="wrapper">
+            <button type="button">Simpan</button>
+        </div>
+        <div id="modal">
+            <div class="box col">
+                <p style="text-align: center;">Pastikan anda <b> telah memasukkan data dengan benar</b>,<br> Lanjutkan?</p>
+                <div class="row" style="max-width: 428px; width: 100%; justify-content: space-between;">
+                    <button type="submit">Ya</button>
+                    <button type="button" id="close-modal">Tidak</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <footer id="pc-view">
+        <h3>Narahubung</h3>
+        <ul>
+            <li>
+                <img src="./assets/icon4.png" alt="">
+                <a href="">08117117929</a>
+            </li>
+            <li>
+                <img src="./assets/icon5.png" alt="">
+                <p>sdm.rsudsumsel@gmail.com</p>
+            </li>
+            <li id="copyright">
+                <p>&copy IT Team RSUD SF Kampus Merdeka 2021</p>
+            </li>
+        </ul>
+    </footer>
+    <footer id="mobile-view">
+        <h3>Narahubung</h3>
+        <ul>
+            <li>
+                <p>Telepon</p>
+                <a href="">: 08117117929</a>
+            </li>
+            <li>
+                <p>Email</p>
+                <p>: sdm.rsudsumsel@gmail.com</p>
+            </li>
+        </ul>
+        <p id="copyright">&copy IT Team RSUD SF Kampus Merdeka 2021</p>
+    </footer>
+    <script src="./js/nav.js"></script>
+    <script src="./js/modal.js"></script>
+</body>
+</html>

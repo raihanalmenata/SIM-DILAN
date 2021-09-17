@@ -1,0 +1,130 @@
+body{
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F9F9F9;
+}
+
+.row{
+    display: flex;
+
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+}
+
+form{
+    margin-top: 40px;
+    margin-bottom: 89px;
+    width: 896px;
+    margin-left: 97px;
+    box-sizing: border-box;
+}
+.question{
+    margin-right: 6px;
+}
+
+
+h1{
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding-top: 45px;
+    padding-bottom: 1px;
+    border-bottom: rgba(0, 0, 0, 0.3) 1px solid;   
+}
+
+label{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+input, select{
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    height: 30px;
+    max-width: 691px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+select{
+    min-height: 30px;
+}
+
+footer{
+    width: 100%;
+}
+
+form .wrapper button[type="button"]{
+    margin-top: 59px;
+    width: 231px;
+    height: 43px;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 20px;
+    border : 1px solid black;
+    background-color: #98DDCA;
+    box-shadow: 1px 4px 9px rgba(0, 0, 0, 0.25);
+}
+
+.wrapper{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#modal{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #00000088;
+
+}
+
+#modal *{
+    border : 1px solid black;
+}
+
+.box{
+    padding-top: 65px;
+    width: 600.76px;
+    height: 280px;
+    align-items: center;
+    justify-content: baseline;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid #000000;
+}
+
+.box p{
+    margin-bottom: 38px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.box button{
+    background-color: white;
+    border : 1px solid black;
+    width: 150px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#modal .box button[type="submit"]:hover{
+    background-color:rgba(152, 221, 202, 1);
+}
+
+#modal .box button[type="button"]:hover{
+    background-color: rgba(255, 119, 119, 1);
+}
