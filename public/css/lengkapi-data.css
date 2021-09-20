@@ -17,7 +17,8 @@ body{
 form{
     margin-top: 40px;
     margin-bottom: 89px;
-    width: 896px;
+    width: 100%;
+    max-width: 896px;
     margin-left: 97px;
     box-sizing: border-box;
 }
@@ -47,6 +48,7 @@ input, select{
     margin-top: 5px;
     margin-bottom: 15px;
     height: 30px;
+    width: 100%;
     max-width: 691px;
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -89,10 +91,6 @@ form .wrapper button[type="button"]{
     right: 0;
     background-color: #00000088;
 
-}
-
-#modal *{
-    border : 1px solid black;
 }
 
 .box{
