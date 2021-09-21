@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.col, .row{
+    display: flex;
+}
+
+.col{
+    flex-direction: column;
+}
+
+main{
+    align-items: center;
+    background-color: #F9F9F9;
+    font-family: 'Montserrat';
+}
+
+#pengajuan h1 {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 40px 0;
+}
+
+#pengajuan p{
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#pengajuan label{
+    margin-bottom: 20px;
+    width: 701px;
+    height: 114px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+label:last-of-type {
+    margin-bottom: 0px !important;
+}
+
+#pengajuan input{
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+#submit-button{
+    justify-content: flex-end;
+    margin-bottom: 89px;
+    margin-top: 60px;
+}
+
+#submit-button button{
+    cursor: pointer;
+    position: relative;
+    right: -193px;
+    width: 231px;
+    height: 43px;
+    justify-content: center;
+    align-items: center;
+    background: #98DDCA;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 4px 9px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+#submit-button button p{
+    margin: 0;
+    margin-left: 12.89px;
+}

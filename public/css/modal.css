@@ -1,0 +1,48 @@
+#modal{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #00000088;
+
+}
+
+#modal .box{
+    padding-top: 65px;
+    width: 600.76px;
+    height: 280px;
+    align-items: center;
+    justify-content: baseline;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid #000000;
+}
+
+#modal .box p{
+    margin-bottom: 38px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#modal .box button{
+    background-color: white;
+    border : 1px solid black;
+    width: 150px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#modal .box button[type="submit"]:hover{
+    background-color:rgba(152, 221, 202, 1);
+}
+
+#modal .box button[type="button"]:hover{
+    background-color: rgba(255, 119, 119, 1);
+}

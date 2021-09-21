@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/nav-footer.css">
+    <link rel="stylesheet" href="./css/Pengajuan-Tugas-Belajar.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div id="logo">
+            <img src="assets/logo.png" alt="" width="70px" height="70px">
+            <div class="group">
+                <h1>SI-DILAN</h1>
+                <h2 class="hidden">RSUD Siti Fatimah</h2>
+            </div>
+        </div>
+        <div class="group">
+            <ul id="nav-buttons">
+                <li class="navbar active">
+                    <a href="">Beranda</a>
+                </li>
+                <li  class="navbar">
+                <a href="">Izin Belajar</a>
+                </li>
+                <li class="navbar">
+                    <a href="">Tugas Belajar</a>
+                </li>
+                <li class="navbar">
+                    <a href="">Notifikasi</a>
+                </li>
+                <ul id="floating-dropdown">
+                    <a href="">
+                        <li>
+                            <img src="./assets/icon1.png" alt="">
+                            <p>Data Diri</p>
+                        </li>
+                    </a>
+                    <a href="" style="border-top: 1px solid rgba(0, 0, 0, 0.5); border-bottom: 1px solid rgba(0, 0, 0, 0.5);">
+                        <li>
+                            <img src="./assets/icon2.png" alt="">
+                            <p>Riwayat</p>
+                        </li>
+                    </a>
+                    <a href="">
+                        <li>
+                            <img src="./assets/icon3.png" alt="">
+                            <p style="color: #FF0000;">Keluar</p>
+                        </li>
+                    </a>
+                </ul>
+            </ul>
+            <img src="./assets/toggle2.png" alt="" id="toggle" width="92px" height="71px">
+        </div>
+        <button id="mobile-toggle">
+            <p>Pilihan Menu</p>
+            <img src="./assets/mobile-toggle.png" alt="">
+        </button>
+        <ul id="mobile-dropdown">
+            <a href="">
+                <li>Beranda</li>
+            </a>
+            <a href="">
+                <li>Izin Belajar</li>
+            </a>
+            <a href="">
+                <li>Tugas Belajar</li>
+            </a>
+            <a href="">
+                <li class="deep">Data Diri</li>
+            </a>
+            <a href="">
+                <li class="deep">Riwayat</li>
+            </a>
+            <a href="">
+                <li style="background-color: #265D58;" class="deep">Keluar</li>
+            </a>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Lengkapi Dokumen</h1>
+        <form action="proses.php" method="post" enctype="multipart/form-data">
+            <p> Surat Keterangan PNS </p><P><input type='file' name='skpns' accept='pdf/*' disabled /></p>
+            <p> Sasaran Kerja Pegawai 1 Tahun Terakhir </p><P><input type='file' name='skp' accept='pdf/*' disabled /></p>
+            <p> Surat Keterangan Akredetasi B </p><P><input type='file' name='accreditation' accept='pdf/*' disabled /></p>
+            <p> Surat Keterangan Kuliah Kelas Reguler </p><P><input type='file' name='regularDesc' accept='pdf/*' disabled /></p>
+            <p> Jadwal Kuliah Kelas Reguler </p><P><input type='file' name='schedule' accept='pdf/*' disabled /></p>
+            <p> Ijazah Terakhir </p><P><input type='file' name='Ijazah' accept='pdf/*' disabled /></p>
+            <p> Surat Pernyataan Bermatrai 10.000 </p><P><input type='file' name='statement' accept='pdf/*' disabled /></p>
+            <p> Transkrip </p><P><input type='file' name='transcript' accept='pdf/*' disabled /></p>
+            <p> KTP </p><P><input type='file' name='KTP' accept='pdf/*' disabled /></p>
+            <p> Uraian Tugas Yang di tanda tangani oleh Direktur </p><P><input type='file' name='jobDesc' accept='pdf/*' disabled /></p>
+            <input type='submit' name='ajukan' value='Ajukan' />
+      </form>
+    </main>
+
+    <footer id="pc-view">
+        <h3>Narahubung</h3>
+        <ul>
+            <li>
+                <img src="./assets/icon4.png" alt="">
+                <a href="">08117117929</a>
+            </li>
+            <li>
+                <img src="./assets/icon5.png" alt="">
+                <p>sdm.rsudsumsel@gmail.com</p>
+            </li>
+            <li id="copyright">
+                <p>&copy IT Team RSUD SF Kampus Merdeka 2021</p>
+            </li>
+        </ul>
+    </footer>
+    <footer id="mobile-view">
+        <h3>Narahubung</h3>
+        <ul>
+            <li>
+                <p>Telepon</p>
+                <a href="">: 08117117929</a>
+            </li>
+            <li>
+                <p>Email</p>
+                <p>: sdm.rsudsumsel@gmail.com</p>
+            </li>
+        </ul>
+        <p id="copyright">&copy IT Team RSUD SF Kampus Merdeka 2021</p>
+    </footer>
+    <script src="./js/nav.js"></script>
+</body>
+</html>

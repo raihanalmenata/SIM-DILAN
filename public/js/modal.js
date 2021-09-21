@@ -1,21 +1,15 @@
-const form = document.getElementsByTagName('form')[0];
-const button = document.querySelector(".wrapper button[type='button']");
-const modal = document.getElementById('modal');
-const closeModal = document.getElementById('close-modal');
+const modal_popup = document.getElementById('modal');
+const modal_buttons = document.querySelectorAll('.modal-button');
 
-button.addEventListener('click',()=>{
-    showModal();
-});
+const showOrHideModal = function (){
+    console.log(modal_popup.style.display);
 
-closeModal.addEventListener('click',()=>{
-    showModal();
-});
-
-const showModal = function() {
-    console.log(modal.style.display);
-
-    if(modal.style.display == 'flex')
-        modal.style.display = 'none';
+    if(modal_popup.style.display == "none" || modal_popup.style.display == "")
+        modal_popup.style.display = "flex";
     else
-        modal.style.display = 'flex'
+        modal_popup.style.display = "none";
+}
+
+for (let index = 0; index < modal_buttons.length; index++) {
+    modal_buttons[index].addEventListener('click',showOrHideModal);
 }
