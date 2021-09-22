@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/nav-footer.css">
-    <link rel="stylesheet" href="./css/izin.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/profil.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&display=swap" rel="stylesheet">
-    <title>Izin Belajar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Riwayat Pengajuan</title>
 </head>
 <body>
     <nav>
@@ -82,56 +83,50 @@
             </a>
         </ul>
     </nav>
-    <main class="col">
-        <div id="syarat">
-            <h1>Syarat Izin Belajar</h1>
-            <ol>
-                <li>Melampirkan SK PNS dan SK Terakhir</li>
-                <li>Melampirkan SKP 1 Tahun Terakhir</li>
-                <li>Melampirkan Surat Keterangan Akreditasi B</li>
-                <li>Melampirkan SK PNS dan SK Terakhir</li>
-                <li>Melampirkan SKP 1 Tahun Terakhir</li>
-                <li>Melampirkan Surat Keterangan Akreditasi B</li>
-                <li>Melampirkan SK PNS dan SK Terakhir</li>
-            </ol>
-        </div>
-        <div id="lowongan">
-            <h1>Sedang Membuka Pendaftaran</h1>
-            <div id="cards-group">
-                <div class="row card">
-                    <img src="./assets/card-picture.png" alt="" class="foto-lowongan" width="129px" height="127px">
-                    <div class="col content">
-                        <h2>S2 Kedokteran Gigi</h2>
-                        <h3>Universitas Sriwijaya</h3>
-                        <h4>Akreditasi A</h4>
-                        <h5>10 Januari - 14 Februari 2021</h5>
-                    </div>
-                </div>
-                <div class="row card">
-                    <img src="./assets/card-picture.png" alt="" class="foto-lowongan" width="129px" height="127px">
-                    <div class="col content">
-                        <h2>S2 Kedokteran Gigi</h2>
-                        <h3>Universitas Sriwijaya</h3>
-                        <h4>Akreditasi A</h4>
-                        <h5>10 Januari - 14 Februari 2021</h5>
-                    </div>
-                </div>
-                <div class="row card">
-                    <img src="./assets/card-picture.png" alt="" class="foto-lowongan" width="129px" height="127px">
-                    <div class="col content">
-                        <h2>S2 Kedokteran Gigi</h2>
-                        <h3>Universitas Sriwijaya</h3>
-                        <h4>Akreditasi A</h4>
-                        <h5>10 Januari - 14 Februari 2021</h5>
-                    </div>
+    <main>
+        <div class="row" id="container">
+            <div id="profil-singkat" class="row">
+                <img src="./assets/icon11.png" alt="" id="foto-profil" width="100px" height="100px">
+                <div id="deskripsi" class="col">
+                    <h1>Nama Pengguna</h1>
+                    <p>NIP</p>
+                    <p>Deskripsi</p>
                 </div>
             </div>
-            <div id="ajukan" class="row">
-                <button type="button" class="row">
-                    <img src="./assets/icon8.png" alt="" width="25px" height="26px">
-                    <p>Ajukan</p>
-                    <img src="./assets/icon12.png" alt="" width="25px" height="26px">
-                </button>
+            <div id="data-diri" class="col">
+                <div class="col">
+                    <h1>Data Diri</h1>
+                    <table>
+                        <tr>
+                            <th>Nama</th>
+                            <td>Test</td>
+                        </tr>
+                        <tr>
+                            <th>Nama</th>
+                            <td>Test</td>
+                        </tr>
+                        <tr>
+                            <th>Nama</th>
+                            <td>Test</td>
+                        </tr>
+                        <tr>
+                            <th>Nama</th>
+                            <td>Test</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="row" style="justify-content: flex-end;">
+                    <button type="button" class="modal-button">Ajukan</button>
+                </div>
+            </div>
+        </div>
+        <div id="modal">
+            <div class="box col">
+                <p style="text-align: center;">Pastikan anda <b> telah memasukkan data dengan benar</b>,<br> Lanjutkan?</p>
+                <div class="row" style="max-width: 428px; width: 100%; justify-content: space-between;">
+                    <button type="submit">Ya</button>
+                    <button type="button" id="close-modal" class="modal-button">Tidak</button>
+                </div>
             </div>
         </div>
     </main>
@@ -166,5 +161,6 @@
         <p id="copyright">&copy IT Team RSUD SF Kampus Merdeka 2021</p>
     </footer>
     <script src="./js/nav.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 </html>

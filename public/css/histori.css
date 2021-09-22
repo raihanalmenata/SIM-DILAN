@@ -1,0 +1,74 @@
+*{
+    /* border : 1px solid black; */
+}
+
+main{
+    flex-grow: 1;
+    justify-content: first baseline;
+    padding: 38px 77px;
+}
+
+.col , .row{
+    display: flex;
+}
+
+.col{
+    flex-direction: column;
+}
+
+#header , #daftar-riwayat{
+    max-width: 1294px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#header{
+    box-sizing: border-box;
+    padding: 25px 24px;
+    margin-bottom: 20px;
+}
+
+#header h1{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+#header img{
+    margin-right: 34px;
+}
+
+#daftar-riwayat{
+    border-collapse: collapse;
+    box-sizing: border-box;
+}
+
+#daftar-riwayat tr th{
+    text-align: left;
+}
+
+#daftar-riwayat tr th:first-of-type, #daftar-riwayat tr td:first-of-type{
+    box-sizing: border-box;
+    width: max-content;
+    padding: 0px 34px;
+    padding-left: 14px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+#daftar-riwayat tr{
+    height: 70px;
+}
+
+#daftar-riwayat th{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    font-weight: 500;
+    font-size: 25px;
+}
+
+#daftar-riwayat td{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-weight: 400;
+    font-size: 20px;
+}

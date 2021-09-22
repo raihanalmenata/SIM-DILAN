@@ -18,8 +18,8 @@ mobileToggle.addEventListener('click',()=>{
     const dropped = mobileDropdown.style.display;
 
 
-    if(dropped == "" || dropped == "flex")
-        mobileDropdown.style.display = "none";
-    else
+    if(dropped == "" || dropped == "none")
         mobileDropdown.style.display = "flex";
+    else
+        mobileDropdown.style.display = "none";
 });

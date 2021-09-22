@@ -3,6 +3,7 @@ main *{
 }
 
 main{
+    background-color: #F9F9F9;
     flex-grow: 1;
     display: flex;
     padding: 45px 71px;
@@ -36,6 +37,7 @@ main{
 
 .card-row{
     justify-content: space-between;
+    max-width: 1440px;
     width: 100%;
 }
 
@@ -63,4 +65,65 @@ main h2 {
 
 .card img{
     cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    main{
+        padding: 0;
+    }
+
+
+    main h1{
+        width: 100%;
+        font-size: 32px;
+        font-weight: 700;
+        padding: 66px 36px;
+        box-sizing: border-box;
+        border: none;
+    }
+
+    main h2{
+        margin: 0;
+        width: 100%;
+        padding: 0 36px;
+        box-sizing: border-box;
+        font-size: 20px;
+        font-weight: 600;
+        color: black;
+        margin-bottom: 37px;
+    }
+
+    .card-row{
+        flex-direction: column;
+        padding-bottom: 8px;
+    }
+
+    .card{
+        width: 100%;
+        border-radius: 0;
+        padding: 40px 45px;
+        height: max-content;
+        border-left: 9px solid #4F8D64;
+        margin-bottom: 35px;
+        box-shadow: none;
+    }
+
+    .card .row.between{
+        align-items: center;
+        margin-bottom: 29px;
+    }
+
+    .card-row .row.between h3{
+        margin: 0;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .desc{
+        margin: 0 !important;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
 }

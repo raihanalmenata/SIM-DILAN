@@ -64,13 +64,14 @@ footer{
 form .wrapper button[type="button"]{
     margin-top: 59px;
     width: 231px;
-    height: 43px;
+    height: 56px;
     font-size: 24px;
     font-weight: 600;
-    border-radius: 20px;
-    border : 1px solid black;
-    background-color: #98DDCA;
-    box-shadow: 1px 4px 9px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    color: white;
+    border : none;
+    background-color: #198754;
+    cursor: pointer;
 }
 
 .wrapper{

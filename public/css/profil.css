@@ -1,0 +1,102 @@
+*{
+    /* border : 1px solid black; */
+}
+
+main{
+    flex-grow: 1;
+    justify-content: first baseline;
+    padding: 39px 120px;
+    align-items: center;
+}
+
+.col , .row{
+    display: flex;
+}
+
+.col{
+    flex-direction: column;
+}
+
+#container{
+    width: max-content;
+}
+
+#profil-singkat{
+    padding:34px 32px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-right: 20px;
+    height: 175px;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+#profil-singkat #foto-profil{
+    margin-top: 3px;
+    margin-right: 25px;
+}
+
+#deskripsi h1{
+    font-weight: 600;
+    font-size: 30px;
+}
+
+#deskripsi p{
+    margin-top: 5px;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+#data-diri{
+    width: 735px;
+}
+
+#data-diri h1{
+    font-weight: 600;
+    font-size: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 15px 40px;
+}
+
+#data-diri table{
+    box-sizing: border-box;
+    margin: 0 40px;
+    margin-top: 10px;
+    margin-bottom: 31px;
+    border-collapse: collapse;
+}
+
+#data-diri th, #data-diri td {
+    padding: 10px 0;
+    text-align: left;
+}
+
+#data-diri th{
+    width: 220px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#data-diri td{
+    font-weight: 300;
+    font-size: 20px;
+}
+
+#data-diri button{
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+    width: 231px;
+    height: 56px;
+    background-color: #198754;
+    border-radius: 5px;
+    border: none;
+    margin-top: 60px;
+    cursor: pointer;
+}
+
+#data-diri .col:first-of-type{
+    background-color: white;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
